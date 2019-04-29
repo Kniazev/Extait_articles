@@ -1,0 +1,9 @@
+<?php
+/** @var Extait\Articles\Block\Article $block */
+$article = $block->getArticle();
+?>
+<?php if (!empty($block->getDate()) && !empty($block->getArticle())) : ?>
+    <p><?= $block->escapeHtml($block->getDate()) ?></p>
+    <p><?= $block->escapeHtml($block->getArticle()['content']) ?></p>
+    <p><?= $block->escapeHtml($block->getArticle()['author']) ?></p>
+<?php endif; ?>

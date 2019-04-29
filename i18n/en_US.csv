@@ -1,0 +1,26 @@
+Back,назад
+"Delete Article","Удалить Статью"
+"Are you sure you want to delete this contact ?","Вы уверены?"
+Reset,Reset
+"Save Article","Save Article"
+"This page no longer exists.","This page no longer exists."
+Articles,Articles
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"A total of %1 record(s) have been disabled.","A total of %1 record(s) have been disabled."
+"A total of %1 record(s) have been enabled.","A total of %1 record(s) have been enabled."
+Edit,Edit
+Delete,Delete
+"Are you sure you want to delete a record?","Вы уверены ?"
+"Add a new Article","Добавить новую статью"
+"Store View","Store View"
+"Are you sure you want to delete selected items?","Are you sure you want to delete selected items?"
+"Delete items","Delete items"
+Disable,Disable
+Enable,Enable
+ID,ID
+Title,Title
+Author,Author
+Published,Published
+"Publication data","Publication data"
+"Page Information","Page Information"
+"Published date","Published date"

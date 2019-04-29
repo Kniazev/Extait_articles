@@ -1,0 +1,15 @@
+<?php
+$articles = $block->getArticles();
+?>
+<?php if (!empty($articles)) : ?>
+    <?php foreach ($articles['list'] as $article) : ?>
+        <div><a href=<?= $this->escapeHtml($article['url']) ?>>
+                <ul>
+                    <li><?= $this->escapeHtml($article['created_at']) ?> </li>
+                    <li><?= $this->escapeHtml($article['title']) ?></li>
+                    <li><?= $this->escapeHtml($article['content']) ?></li>
+                </ul>
+            </a>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>

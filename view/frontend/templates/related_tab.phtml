@@ -1,0 +1,6 @@
+<h1>Related articles</h1>
+<?php if (!empty($this->getRelatedArticles())) : ?>
+    <?php foreach ($this->getRelatedArticles() as $article) : ?>
+        <a href=<?= $this->escapeHtml($this->getArticleUrl($article['id'])) ?>><?= $this->escapeHtml($article['title']) ?></a></br>
+    <?php endforeach; ?>
+<?php endif; ?>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="articles" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Articles</label>
+            <tab>general</tab>
+            <resource>Extait_Articles::article</resource>
+            <group id="seo" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Search Engine Optimization</label>
+                <field id="article_url_suffix" translate="label" type="text" sortOrder="6" showInDefault="1"
+                       showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Article url suffix</label>
+                </field>
+                <field id="article_mail_header" translate="label" type="text" sortOrder="6" showInDefault="1"
+                       showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Article mail header</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,9 @@
+<?php
+/** @var \Extait\Articles\Model\Article $article */
+?>
+<p>Sidebar</p>
+<?php if (!empty($this->getArticles())) : ?>
+    <?php foreach ($this->getArticles()->getItems() as $article) : ?>
+        <a href=<?= $this->escapeHtml($this->getArticleUrl($article->getId())); ?>><?= $this->escapeHtml($article->getTitle()) ?></a></br>
+    <?php endforeach; ?>
+<?php endif; ?>

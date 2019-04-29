@@ -1,0 +1,32 @@
+<?php if (!empty($this->getRelatedProducts())) : ?>
+    <div class="block related">
+        <div class="block-title title">Related Products</div>
+        <div class="block-content content" aria-labelledby="block-related-heading">
+            <div class="products wrapper grid products-grid products-related">
+                <ol class="products list items product-items">
+                    <?php foreach ($this->getRelatedProducts() as $product) : ?>
+                        <li class="item product product-item">
+                            <a href="<?= $product->getProductUrl(); ?>">
+                                <div class="product-item-info related-available">
+                                <span class="product-image-container" style="width:160px">
+                                    <span class="product-image-wrapper" style="padding-bottom: 100%">
+                                        <image src="<?= $block->getImageUrl($product); ?>" class="product-image-photo">
+                                    </span>
+                                </span>
+                                    <div class="product details product-item-details">
+                                        <div class="price-box price-final_price" data-role="priceBox">
+                                            <span class="price"><?= $block->escapeHtml($block->getFormattedPrice($product)) ?></span>
+                                        </div>
+                                        <strong class="product name product-item-name">
+                                            <?= $block->escapeHtml($product['name']) ?>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
+                </ol>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

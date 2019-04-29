@@ -1,0 +1,14 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="extait_articles_email_template_notification"
+              label="Label Of Your Template File"
+              file="notification.html"
+              type="html"
+              module="Extait_Articles"
+              area="frontend"/>
+    <template id="extait_articles_mailing"
+              label="Label"
+              file="mailing.html"
+              type="html"
+              module="Extait_Articles"
+              area="frontend"/>
+</config>

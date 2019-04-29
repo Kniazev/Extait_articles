@@ -1,0 +1,8 @@
+<?php
+$articles = $block->getArticles();
+?>
+<?php if (!empty($articles)) : ?>
+    <?php foreach ($articles['list'] as $article) : ?>
+        <a href=<?= $this->escapeHtml($article['url']) ?>><?= $this->escapeHtml($article['title']) ?></a></br>
+    <?php endforeach; ?>
+<?php endif; ?>
